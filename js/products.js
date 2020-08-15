@@ -12,6 +12,7 @@ function showCategoriesList(array){
                 <div class="col-3">
                     <img src="` + category.imgSrc + `" alt="` + category.description + `" class="img-thumbnail">
                     
+                    
                 </div>
                 <div class="col">
                     <div class="d-flex w-100 justify-content-between">
