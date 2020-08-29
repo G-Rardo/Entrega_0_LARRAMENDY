@@ -139,3 +139,47 @@ a.custom-card:hover {
 .checked {
   color: orange;
 }
+
+.user {
+  text-align: right;
+  margin-right: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+#header {
+  text-align: right;
+  margin-left:85%;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+
+ul, ol {
+  list-style:none;
+}
+
+.desplegar > li {
+  float:left;
+}
+
+.desplegar li a {
+  background-color:#000;
+  color:#fff;
+  text-decoration:none;
+  padding:10px 12px;
+  display:block;
+}
+
+.desplegar li a:hover {
+  background-color:#434343;
+}
+
+.desplegar li ul {
+  display:none;
+  position:absolute;
+  min-width:140px;
+}
+
+.desplegar li:hover > ul {
+  display:block;

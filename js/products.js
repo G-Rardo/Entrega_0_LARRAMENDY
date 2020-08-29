@@ -35,6 +35,45 @@ function showCategoriesList(array){
     }
 }
 
+function ordenarRelevancia(){
+    categoriesArray.sort( function(ant, sig){
+        if (ant.soldCount < sig.soldCount){ //Revisa si uno de los soldCount es menor que el otro
+            return 1;
+        }
+        if (ant.soldCount > sig.soldCount) {
+            return -1;
+        } 
+        return 0;
+    });
+    showCategoriesList(categoriesArray);
+}
+function ordenarPrecioAsc(){ //Ordena los precios del menor al mayor
+    categoriesArray.sort( function(ant, sig){
+        if (ant.cost > sig.cost){
+            return 1;
+        }
+        if (ant.cost < sig.cost) {
+            return -1;
+        } 
+        return 0;
+    
+    });
+    showCategoriesList(categoriesArray);
+}
+
+function ordenarPrecioDes(){ //Ordena los precios del mayor al menor
+    categoriesArray.sort( function(ant, sig){
+        if (ant.cost < sig.cost){
+            return 1;
+        }
+        if (ant.cost > sig.cost) {
+            return -1;
+        } 
+        return 0;
+    
+    });
+    showCategoriesList(categoriesArray);
+}
 //Función que se ejecuta una vez que se haya lanzado el evento de
 //que el documento se encuentra cargado, es decir, se encuentran todos los
 //elementos HTML presentes.
